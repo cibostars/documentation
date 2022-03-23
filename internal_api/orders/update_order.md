@@ -1,24 +1,22 @@
-# Products - Update one
+# Order - Update one
 
-Update one product
+Update one order.
 
 ### Request
-`PUT internal_api/products/:internal_id.json`
+`PUT internal_api/orders/:id.json`
 
-`internal_id` - Identifier of a product.
+`id` - Identifier of an order.
 
 ```json
 {
-  "product": {
-    "title": "string",
-    "weight": "string",
-    "price": "string"
+  "order": {
+    "status": "string"
   }
 }
 ```
 
 ### Response
-Update product is a synchronous operation. You will get final status of an operation.
+Update order is a synchronous operation. You will get final status of an operation.
 ```json
 {
   "processing_object": {
@@ -39,11 +37,11 @@ Possible statuses:
 
 ### Example:
 ##### Request
-`PUT internal_api/products/a1ewd2f.json`
+`PUT internal_api/orders/123.json`
 ```json
 {
-  "product": {
-    "price": "2500.00"
+  "order": {
+    "status": "confirmed"
   }
 }
 ```
