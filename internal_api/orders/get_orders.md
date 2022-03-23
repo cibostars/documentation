@@ -25,6 +25,7 @@ Params:
       "products": [
         {
           "internal_id": "string",
+          "title": "string",
           "quantity": "integer",
           "price": {
             "base_for_one": "string, price for one product without discounts",
@@ -32,7 +33,8 @@ Params:
           },
           "additions": [
             {
-              "internal_id": "string"
+              "internal_id": "string",
+              "title": "string"
             }
           ]
         }
@@ -108,6 +110,7 @@ Source type:
       "products": [
         {
           "internal_id": "internal_448_2",
+          "title": "Маргарита",
           "quantity": 1,
           "price": {
             "base_for_one": "2600.00",
@@ -115,15 +118,18 @@ Source type:
           },
           "additions": [
             {
-              "internal_id": "internal_0_0"
+              "internal_id": "internal_0_0",
+              "title": "Салями"
             },
             {
-              "internal_id": "internal_486_0"
+              "internal_id": "internal_486_0",
+              "title": "Оливки"
             }
           ]
         },
         {
           "internal_id": "internal_195_0",
+          "title": "Грибная",
           "quantity": 2,
           "price": {
             "base_for_one": "1850.00",
@@ -131,7 +137,8 @@ Source type:
           },
           "additions": [
             {
-              "internal_id": "internal_0_0"
+              "internal_id": "internal_0_0",
+              "title": "Салями"
             }
           ]
         },
@@ -175,6 +182,7 @@ Source type:
       "products": [
         {
           "internal_id": "internal_448_0",
+          "title": "Маргарита",
           "quantity": 1,
           "price": {
             "base_for_one": "1850.00",
