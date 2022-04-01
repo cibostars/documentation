@@ -10,7 +10,7 @@ Get one order by id.
 ### Response
 ```json
 {
-  "id": "integer",
+  "id": "string",
   "created_at": "string, ISO 8601 datetime format",
   "status": "string",
   "payment_status": "string",
@@ -86,12 +86,12 @@ Source type:
 
 ### Example:
 ##### Request
-`GET /internal_api/orders/1.json`
+`GET /internal_api/orders/7d424e65-3309-4064-a7d3-0c3da24b22a3.json`
 
 ##### Response
 ```json
 {
-    "id": 1,
+    "id": "7d424e65-3309-4064-a7d3-0c3da24b22a3",
     "created_at": "2022-03-05T17:50:13.513+06:00",
     "status": "created",
     "payment_status": "unpaid",

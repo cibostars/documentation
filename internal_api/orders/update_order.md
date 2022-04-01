@@ -37,7 +37,7 @@ Possible statuses:
 
 ### Example:
 ##### Request
-`PUT internal_api/orders/123.json`
+`PUT internal_api/orders/cdb3d536-92d6-4eb9-8840-1b2ad164b4ce.json`
 ```json
 {
   "order": {

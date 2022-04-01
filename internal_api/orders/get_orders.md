@@ -14,7 +14,7 @@ Params:
 {
   "orders": [
     {
-      "id": "integer",
+      "id": "string",
       "created_at": "string, ISO 8601 datetime format",
       "status": "string",
       "payment_status": "string",
@@ -99,7 +99,7 @@ Source type:
 {
   "orders": [
     {
-      "id": 1,
+      "id": "7d424e65-3309-4064-a7d3-0c3da24b22a3",
       "created_at": "2022-03-05T17:50:13.513+06:00",
       "status": "created",
       "payment_status": "unpaid",
@@ -171,7 +171,7 @@ Source type:
       }
     },
     {
-      "id": 2,
+      "id": "cdb3d536-92d6-4eb9-8840-1b2ad164b4ce",
       "created_at": "2022-03-05T17:50:32.148+06:00",
       "status": "created",
       "payment_status": "unpaid",
