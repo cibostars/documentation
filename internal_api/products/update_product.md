@@ -12,7 +12,8 @@ Update one product
   "product": {
     "title": "string",
     "weight": "string",
-    "price": "string"
+    "price": "string",
+    "deleted": "boolean"
   }
 }
 ```

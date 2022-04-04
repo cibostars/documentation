@@ -11,7 +11,8 @@ Create one product
     "internal_id": "string",
     "title": "string",
     "weight": "string",
-    "price": "string"
+    "price": "string",
+    "deleted": "boolean"
   }
 }
 ```
@@ -45,7 +46,8 @@ Possible statuses:
     "internal_id": "a1ewd2f",
     "title": "Маргарита",
     "weight": "200 г",
-    "price": "2000.00"
+    "price": "2000.00",
+    "deleted": false
   }
 }
 ```
