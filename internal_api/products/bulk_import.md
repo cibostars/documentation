@@ -1,9 +1,9 @@
-# Products - Bulk Insert
+# Products - Bulk Import
 
 Create or update many products.
 
 ### Request
-`POST /internal_api/products/bulk_insert.json`
+`POST /internal_api/products/bulk_import.json`
 ```json
 {
   "products": [
@@ -20,7 +20,7 @@ Create or update many products.
 > All keys must be specified in a request even if their values are empty.
 
 ### Response
-Bulk insert is an asynchronous operation. If you want to get actual information about request - use [processing_status](processing_status.md)
+Bulk import is an asynchronous operation. If you want to get actual information about request - use [processing_status](processing_status.md)
 API endpoint with `id` parameter from that response.
 
 ```json
@@ -43,7 +43,7 @@ Possible statuses:
 
 ### Example:
 ##### Request
-`POST internal_api/products/bulk_insert.json`
+`POST internal_api/products/bulk_import.json`
 ```json
 {
   "products": [

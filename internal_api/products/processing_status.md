@@ -1,11 +1,11 @@
 # Products - Processing status
 
-Get status about async operation (see [bulk_insert](bulk_insert.md)).
+Get status about async operation (see [bulk_insert](bulk_import.md)).
 
 ### Request
 `GET /internal_api/processing_status/:id.json`
 
-`id` - Identifier of a processing object. You can get it from API responses (i.e [bulk_insert](bulk_insert.md)).
+`id` - Identifier of a processing object. You can get it from API responses (i.e [bulk_insert](bulk_import.md)).
 
 ### Response
 ```json
