@@ -6,8 +6,7 @@
 - Products
     - [Bulk import many products](./internal_api/products/bulk_import.md)
     - [Get processing status](./internal_api/products/processing_status.md)
-    - [Create one product](./internal_api/products/create_product.md)
-    - [Update one product](./internal_api/products/update_product.md)
+    - [Create or update one product](./internal_api/products/upsert_product.md)
 - Orders
     - [Get orders](./internal_api/orders/get_orders.md)
     - [Get one order](./internal_api/orders/get_one_order.md) 

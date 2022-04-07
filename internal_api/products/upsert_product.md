@@ -1,15 +1,14 @@
-# Products - Update one
+# Products - Upsert one
 
-Update one product
+Create or update one product.
 
 ### Request
-`PUT internal_api/products/:internal_id.json`
-
-`internal_id` - Identifier of a product.
+`POST internal_api/products/upsert.json`
 
 ```json
 {
   "product": {
+    "internal_id": "string",
     "title": "string",
     "weight": "string",
     "price": "string",
@@ -19,7 +18,7 @@ Update one product
 ```
 
 ### Response
-Update product is a synchronous operation. You will get final status of an operation.
+Create product is a synchronous operation. You will get final status of an operation.
 ```json
 {
   "processing_object": {
@@ -40,11 +39,15 @@ Possible statuses:
 
 ### Example:
 ##### Request
-`PUT internal_api/products/a1ewd2f.json`
+`POST internal_api/products/upsert.json`
 ```json
 {
   "product": {
-    "price": "2500.00"
+    "internal_id": "a1ewd2f",
+    "title": "Маргарита",
+    "weight": "200 г",
+    "price": "2000.00",
+    "deleted": false
   }
 }
 ```
@@ -55,7 +58,7 @@ Possible statuses:
   "processing_object": {
     "id": 10,
     "status": "succeeded",
-    "info": "Updated: 1"
+    "info": "Created: 1"
   }
 }
 ```
