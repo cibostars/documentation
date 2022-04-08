@@ -3,7 +3,7 @@
 Get list of orders within specified date range
 
 ### Request
-`GET /internal_api/orders.json`
+`GET /internal_api/orders.json?start_date=xxx&end_date=yyy`
 
 Params:
 - `start_date` - ISO 8601 datetime format
