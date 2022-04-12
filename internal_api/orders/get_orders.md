@@ -47,6 +47,12 @@ Params:
       "delivery": {
         "address": "string",
         "datetime": "string",
+        "address_level": "string",
+        "address_entrance": "string",
+        "address_apt": "string",
+        "address_home": "string",
+        "address_street": "string",
+        "address_city": "string",
         "price": {
           "base_total": "string, total price for delivery without discounts"
         }
@@ -159,7 +165,13 @@ Source type:
       },
       "delivery": {
         "address": "Алматы, жилой комплекс Клубный дом на Чайковского, 149, кв/оф 123",
-        "datetime": "Как можно скорее",
+        "datetime": null,
+        "address_level": "",
+        "address_entrance": "",
+        "address_apt": "123",
+        "address_home": "149",
+        "address_street": "жилой комплекс Клубный дом на Чайковского",
+        "address_city": "Алматы",
         "price": {
           "base_total": "400.00"
         }
@@ -198,7 +210,13 @@ Source type:
       },
       "delivery": {
         "address": "Алматы, улица Досмухамедова, 54А, кв/оф 23",
-        "datetime": "14:30 05.03.22",
+        "datetime": "14:30 05:03:22",
+        "address_level": "",
+        "address_entrance": "",
+        "address_apt": "23",
+        "address_home": "54А",
+        "address_street": "улица Досмухамедова",
+        "address_city": "Алматы",
         "price": {
           "base_total": "400.00"
         }
