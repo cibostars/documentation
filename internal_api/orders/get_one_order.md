@@ -43,6 +43,12 @@ Get one order by id.
   "delivery": {
     "address": "string",
     "datetime": "string",
+    "address_level": "string",
+    "address_entrance": "string",
+    "address_apt": "string",
+    "address_home": "string",
+    "address_street": "string",
+    "address_city": "string",
     "price": {
       "base_total": "string, total price for delivery without discounts"
     }
@@ -150,8 +156,14 @@ Source type:
     "mobile_phone": "79000000000"
     },
     "delivery": {
-    "address": "Алматы, жилой комплекс Клубный дом на Чайковского, 149, кв/оф 123",
-    "datetime": "Как можно скорее",
+    "address": "Алматы, жилой комплекс Клубный дом на Чайковского, 149, кв/оф 123", 
+    "datetime": null,
+    "address_level": "",
+    "address_entrance": "",
+    "address_apt": "123",
+    "address_home": "149",
+    "address_street": "жилой комплекс Клубный дом на Чайковского",
+    "address_city": "Алматы",
     "price": {
       "base_total": "400.00"
     }
