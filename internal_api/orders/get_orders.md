@@ -1,6 +1,7 @@
 # Orders - Get list
 
-Get list of orders within specified date range
+Get list of orders within specified date range.
+Returns only paid and not confirmed orders.
 
 ### Request
 `GET /internal_api/orders.json?start_date=xxx&end_date=yyy`
@@ -71,18 +72,12 @@ Statuses:
 | Status    | Description                                                                                     |
 |-----------|-------------------------------------------------------------------------------------------------|
 | created   | Order has been created. Basic status for orders not processed by sales manager                  |
-| confirmed | Order has been confirmed by sales manager                                                       |
-| delivered | Order has been successfully delivered to customer                                               |
-| cancelled | Order has been canceled by sales manager or payment by card has been declined by payment system |
 
 Payment statuses:
 
 | Payment Status      | Description                                                                                                 |
 |---------------------|-------------------------------------------------------------------------------------------------------------|
-| unpaid              | Order has been created. Payment form has not been initialized                                               |   
-| waiting_for_payment | Payment form has been initialized. Waiting for information about payment status from the processing service |
 | paid                | Payment by card has been successfully done                                                                  |
-| failed              | Payment by card has been failed. Order status has been changed to "cancelled"                               |
 
 Payment method:
 
@@ -110,7 +105,7 @@ Source type:
       "id": "7d424e65-3309-4064-a7d3-0c3da24b22a3",
       "created_at": "2022-03-05T17:50:13.513+06:00",
       "status": "created",
-      "payment_status": "unpaid",
+      "payment_status": "paid",
       "payment_method": "card",
       "source_type": "web",
       "comment": "Do not call me!!!",
@@ -188,7 +183,7 @@ Source type:
       "id": "cdb3d536-92d6-4eb9-8840-1b2ad164b4ce",
       "created_at": "2022-03-05T17:50:32.148+06:00",
       "status": "created",
-      "payment_status": "unpaid",
+      "payment_status": "paid",
       "payment_method": "cash",
       "source_type": "mobile",
       "comment": "",
