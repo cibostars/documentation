@@ -1,14 +1,9 @@
 # Orders - Get list
 
-Get list of orders within specified date range.
-Returns only paid and not confirmed orders.
+Get list of paid and not confirmed orders.
 
 ### Request
-`GET /internal_api/orders.json?start_date=xxx&end_date=yyy`
-
-Params:
-- `start_date` - ISO 8601 datetime format
-- `end_date`- ISO 8601 datetime format
+`GET /internal_api/orders.json`
 
 ### Response
 ```json
@@ -95,7 +90,7 @@ Source type:
 
 ### Example:
 ##### Request
-`GET /internal_api/orders.json&start_date=2022-03-05T14:00:00.000+06:00&end_date=2022-03-05T18:00:00.000+06:00`
+`GET /internal_api/orders.json`
 
 ##### Response
 ```json
