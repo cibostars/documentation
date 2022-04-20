@@ -77,10 +77,12 @@ Statuses:
 
 Payment statuses:
 
-| Payment Status | Description                                |
-|----------------|--------------------------------------------|
-| unpaid         | Waiting for payment by card                |
-| paid           | Payment by card has been successfully done |
+| Payment Status      | Description                                                                                                 |
+|---------------------|-------------------------------------------------------------------------------------------------------------|
+| unpaid              | Order has been created. Payment form has not been initialized                                               |   
+| waiting_for_payment | Payment form has been initialized. Waiting for information about payment status from the processing service |
+| paid                | Payment by card has been successfully done                                                                  |
+| failed              | Payment by card has been failed. Order status has been changed to "cancelled"                               |
 
 Payment method:
 
