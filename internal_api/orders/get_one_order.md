@@ -32,7 +32,11 @@ Get one order by id.
           "internal_id": "string",
           "title": "string"
         }
-      ]
+      ],
+      "promo": {
+        "promo_id": "integer",
+        "promo_title": "string"
+      }
     }
   ],
   "customer": {
@@ -125,7 +129,11 @@ Source type:
           "internal_id": "internal_486_0",
           "title": "Оливки"
         }
-      ]
+      ],
+      "promo": {
+        "promo_id": 12,
+        "promo_title": "Первый заказ через мобильное приложение"
+      }
     },
     {
       "internal_id": "internal_195_0",
