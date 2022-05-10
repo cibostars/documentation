@@ -15,6 +15,20 @@ Update one order.
 }
 ```
 
+Order statuses
+Statuses:
+
+| Status     | Description                                                                                     |
+|------------|-------------------------------------------------------------------------------------------------|
+| created    | Order has been created. Basic status for orders not processed by sales manager                  |
+| accepted   | Order has been confirmed by sales manager                                                       |
+| cooking    | Order is cooking                                                                                |
+| ondelivery | Order is on delivery                                                                            |
+| timing     | Order has been scheduled for a later cooking and delivered                                      |
+| edited     | Order has been edited by sales manager                                                          |
+| delivered  | Order has been successfully delivered to customer                                               |
+| cancelled  | Order has been canceled by sales manager or payment by card has been declined by payment system |
+
 ### Response
 Update order is a synchronous operation. You will get final status of an operation.
 ```json
@@ -28,7 +42,7 @@ Update order is a synchronous operation. You will get final status of an operati
 }
 ```
 
-Possible statuses:
+Possible response statuses:
 
 | Status    | Description                               |
 |-----------|-------------------------------------------|
@@ -41,7 +55,7 @@ Possible statuses:
 ```json
 {
   "order": {
-    "status": "confirmed"
+    "status": "accepted"
   }
 }
 ```
