@@ -66,12 +66,16 @@ Get one order by id.
 ```
 Statuses:
 
-| Status    | Description                                                                                     |
-|-----------|-------------------------------------------------------------------------------------------------|
-| created   | Order has been created. Basic status for orders not processed by sales manager                  |
-| confirmed | Order has been confirmed by sales manager                                                       |
-| delivered | Order has been successfully delivered to customer                                               |
-| cancelled | Order has been canceled by sales manager or payment by card has been declined by payment system |
+| Status     | Description                                                                                     |
+|------------|-------------------------------------------------------------------------------------------------|
+| created    | Order has been created. Basic status for orders not processed by sales manager                  |
+| accepted   | Order has been confirmed by sales manager                                                       |
+| cooking    | Order is cooking                                                                                |
+| ondelivery | Order is on delivery                                                                            |
+| timing     | Order has been scheduled for a later cooking and delivered                                      |
+| edited     | Order has been edited by sales manager                                                          |
+| delivered  | Order has been successfully delivered to customer                                               |
+| cancelled  | Order has been canceled by sales manager or payment by card has been declined by payment system |
 
 Payment statuses:
 
