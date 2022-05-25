@@ -37,6 +37,10 @@ Get list of paid and not confirmed orders.
           "promo": {
             "promo_id": "integer",
             "promo_title": "string"
+          },
+          "promo_code": {
+            "promo_code_id": "integer",
+            "promo_code_value": "string"
           }
         }
       ],
@@ -132,6 +136,10 @@ Source type:
           "promo": {
             "promo_id": 12,
             "promo_title": "Первый заказ через мобильное приложение"
+          },
+          "promo_code": {
+            "promo_code_id": 5,
+            "promo_code_value": "Cibo2022"
           }
         },
         {
