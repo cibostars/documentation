@@ -33,7 +33,7 @@ Get list of paid and not confirmed orders.
               "title": "string"
             }
           ],
-          "bought_for_bonuses": "boolean",
+          "paid_in_bonuses": "boolean",
           "promo": {
             "promo_id": "integer",
             "promo_title": "string"
@@ -160,7 +160,7 @@ Source type:
         {
           "internal_id": "internal_143_0",
           "quantity": 1,
-          "bought_for_bonuses": true,
+          "paid_in_bonuses": true,
           "price": {
             "base_for_one": "0.00",
             "base_total": "0.00"
