@@ -18,6 +18,7 @@ Get one order by id.
   "source_type": "string",
   "comment": "string",
   "change": "string",
+  "brand": "string",
   "products": [
     {
       "internal_id": "string",
@@ -105,6 +106,13 @@ Source type:
 | web         | Order has been placed from web        |
 | mobile      | Order has been placed from mobile app |
 
+Brand:
+
+| Source Type | Description                         |
+|-------------|-------------------------------------|
+| cibosano    | Order has been placed for Cibo Sano |
+| meteor      | Order has been placed for Meteor    |
+
 ### Example:
 ##### Request
 `GET /internal_api/orders/7d424e65-3309-4064-a7d3-0c3da24b22a3.json`
@@ -120,6 +128,7 @@ Source type:
     "source_type": "web",
     "comment": "Do not call me!!!",
     "change": "",
+    "brand": "cibosano",
     "products": [
     {
       "internal_id": "internal_448_2",

@@ -18,6 +18,7 @@ Get list of paid and not confirmed orders.
       "source_type": "string",
       "comment": "string",
       "change": "string",
+      "brand": "string",
       "products": [
         {
           "internal_id": "string",
@@ -97,11 +98,19 @@ Source type:
 | web         | Order has been placed from web        |
 | mobile      | Order has been placed from mobile app |
 
+Brand:
+
+| Source Type | Description                         |
+|-------------|-------------------------------------|
+| cibosano    | Order has been placed for Cibo Sano |
+| meteor      | Order has been placed for Meteor    |
+
 ### Example:
 ##### Request
 `GET /internal_api/orders.json`
 
 ##### Response
+
 ```json
 {
   "orders": [
@@ -114,6 +123,7 @@ Source type:
       "source_type": "web",
       "comment": "Do not call me!!!",
       "change": "",
+      "brand": "cibosano",
       "products": [
         {
           "internal_id": "internal_448_2",
@@ -201,6 +211,7 @@ Source type:
       "source_type": "mobile",
       "comment": "",
       "change": "2500",
+      "brand": "meteor",
       "products": [
         {
           "internal_id": "internal_448_0",
